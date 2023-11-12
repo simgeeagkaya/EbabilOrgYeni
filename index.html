@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ebabil Drone Takımı</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky" id="navbarNav">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://ebabildrone.org" class="flex items-center">
+          <img src="images/logo.png" class="h-8 mr-3" alt="Ebabil Drone Takımı Logosu" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ebabil Drone Takımı</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Ana Menüyü Açın</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#slider1" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Anasayfa</a>
+          </li>
+          <li>
+            <a href="#slider2" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projelerimiz</a>
+          </li>
+          <li>
+            <a href="#slider3" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Takımımız</a>
+          </li>
+          <li>
+            <a href="#slider4" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sponsorlarımız</a>
+          </li>
+          <li> 
+            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+            İletişim Formu
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="swiper mainSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-center bg-no-repeat bg-[url('../images/background-images/bg-1.jpg')] bg-blend-multiply" id="slider1">
+          <div class="mainDisc flex flex-col items-center justify-center h-full text-white">
+            <h1 class="text-center text-4xl font-bold mx-4">Ebabil Drone Takımı</h1>
+            <div class="text-center mt-4">
+              <p>Ebabil Drone, Türkiye'nin en iyi drone takımı olma yolunda hedefleri olan genç mühendis adaylarından oluşmaktadır.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="slider2">
+          <div class="flex flex-col justify-center items-center h-full">
+            <h2 class="text-2xl lg:text-4xl">Projelerimiz,<span></span></h2>
+          <div class="swiper projectSwiper !h-4/5 !lg:h-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex items-center gap-4">
+                    <img class="w-10 h-10 rounded-full" src="images/motherboard.png" alt="">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">Yapılış Tarihi:11.09.2023</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider ">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project_slider">
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="flex justify-around items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full bg-gray-200" src="./images/motherboard.png" alt="Ebabil PDB">
+                    <div class="font-medium dark:text-white">
+                      <div>Ebabil PDB</div>
+                      <div class="text-sm text-gray-500 dark:text-gray-400">110 Gün Önce</div>
+                    </div>
+                  </div>
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-4">Ebabil Güç Dağıtım Kartı</h5>
+                  </a>
+                  <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ebabil Bilim ve Teknoloji Derneği Ar-Ge ekibi Ebabil Drone Takımı olarak tüm tasarım ve üretim süreçleri tarafımıza ait olan Ebabil Güç Dağıtım Kartı (Ebabil PDB), dört motorlu döner kanat insansız hava araçları için geliştirilmiştir.</p>
+                  <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                      Detaylı Bilgi için: 
+                      <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                  </a>
+                  <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-5">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100% Tamamlandı.</div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="slider3">
+          <div class="flex flex-col justify-center items-center h-full">
+            <h2 class="text-4xl mb-20">Takımımız</h2>
+            <div class="swiper teamSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/celil.png" alt="Celil Akdemir"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-laptop-code fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Celil Akdemir</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Yazılım Takım Kaptanı <br> Elektrik Elektronik Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:celo_238@hotmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/celil-akdemir-568433258/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/celil.png" alt="Mert Can Batur"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-laptop-code fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Mert Can Batur</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Yazılım Ekip Üyesi <br> Makine Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:mertcbatur@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/mertcanbatur/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/celil.png" alt="Simge Ağkaya"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-laptop-code fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Simge Ağkaya</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Yazılım Ekip Üyesi<br> Elektrik Elektronik Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:agkayasimge.50@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/simge-a%C4%9Fkaya-8919021b8/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/yusufcan.jpg" alt="Yusuf Can"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-pen-ruler fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Yusuf Can</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Tasarım ve Analiz Takım Kaptanı <br> Makine Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:ysf8879@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/yusuf-can16/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/celil.png" alt="Halil İbrahim Musaoğlu"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-pen-ruler fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Halil İbrahim Musaoğlu</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Tasarım ve Analiz Takım Kaptanı <br> Makine Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:musaogluhalil8@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/halilmsgl/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/salih.png" alt="Salih Taştekin"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-bolt fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Salih Taştekin</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Elektronik Takım Kaptanı <br> Elektrik Elektronik Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:salih.b.t2002@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/salih-ta%C5%9Ftekin-22316b225/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center py-5">
+                      <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="./images/team-members/salih.png" alt="Salih Taştekin"/>
+                      <div class="flex justify-end px-4 pt-4">
+                        <i class="fa-solid fa-bolt fa-xl"></i>
+                      </div>
+                      <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white mt-2">Salih Taştekin</h5>
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Elektronik Takım Kaptanı <br> Elektrik Elektronik Mühendisliği Öğrencisi</span>
+                      <div class="flex mt-4 space-x-3 md:mt-6">
+                        <a href="mailto:salih.b.t2002@gmail.com" target="_blank"><i><i class="fa-regular fa-envelope fa-2xl"></i></i></a>
+                        <a href="https://www.linkedin.com/in/salih-ta%C5%9Ftekin-22316b225/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination mb-4"></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="slider4">Slide 4</div>
+        <div class="swiper-slide" id="slider5">
+          <section class="bg-white dark:bg-gray-900 ">
+            <div class="py-8 lg:py-5 px-2 mx-auto max-w-screen-md overflow-y-auto">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">İletişim</h2>
+                <p class="mb-4 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Ebabil Drone Takımına Ulaşmak Çok Kolay! Aşağıdaki Formu doldurarak bizlere ulaşabilirsiniz. </p>
+                <form action="#" class="space-y-8 text-left">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ad ve Soyad</label>
+                        <input type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">E-Mail Adresiniz</label>
+                        <input type="email" id="email" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="iletisim@ebabildrone.org" required>
+                    </div>
+                    <div>
+                      <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">İletişim Konusu</label>
+                      <select id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Bir konu başlığı seçiniz.</option>
+                        <option value="sponsorship">Sponsorluk</option>
+                        <option value="for_team">Takım Başvurusu</option>
+                        <option value="team_contact">İletişim</option>
+                      </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Mesajınız</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Mesajınızı bırakın..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Gönder</button>
+                </form>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/scripts.js"></script>
+    <script src="javascript/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+  </body>
+</html>
