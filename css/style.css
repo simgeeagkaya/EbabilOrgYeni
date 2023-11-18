@@ -31,3 +31,6 @@ html,body{
     50% { content: 'çabalarımız'}
     100% { content: 'uğraşlarımız'}
   }
+  .custom-background {
+    background-image: url('../images/background-images/aaa4.jpg');
+  
